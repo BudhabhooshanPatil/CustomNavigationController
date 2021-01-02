@@ -14,6 +14,8 @@
 		6EF9B5F725A0397000AB7623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF9B5F625A0397000AB7623 /* Assets.xcassets */; };
 		6EF9B5FA25A0397000AB7623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF9B5F825A0397000AB7623 /* LaunchScreen.storyboard */; };
 		6EF9B5FD25A0397000AB7623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B5FC25A0397000AB7623 /* main.m */; };
+		6EF9B60D25A03ABA00AB7623 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B60B25A03ABA00AB7623 /* NavigationBar.m */; };
+		6EF9B60E25A03ABA00AB7623 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		6EF9B5F925A0397000AB7623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EF9B5FB25A0397000AB7623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EF9B5FC25A0397000AB7623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EF9B60A25A03AB900AB7623 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		6EF9B60B25A03ABA00AB7623 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		6EF9B5E925A0396C00AB7623 /* CustomNavigationController-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				6EF9B60525A03A6F00AB7623 /* NavigationBar */,
 				6EF9B5EA25A0396C00AB7623 /* AppDelegate.h */,
 				6EF9B5EB25A0396C00AB7623 /* AppDelegate.m */,
 				6EF9B5ED25A0396C00AB7623 /* SceneDelegate.h */,
@@ -74,6 +80,16 @@
 				6EF9B5FC25A0397000AB7623 /* main.m */,
 			);
 			path = "CustomNavigationController-Objc";
+			sourceTree = "<group>";
+		};
+		6EF9B60525A03A6F00AB7623 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				6EF9B60A25A03AB900AB7623 /* NavigationBar.h */,
+				6EF9B60B25A03ABA00AB7623 /* NavigationBar.m */,
+				6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EF9B5FA25A0397000AB7623 /* LaunchScreen.storyboard in Resources */,
+				6EF9B60E25A03ABA00AB7623 /* NavigationBar.xib in Resources */,
 				6EF9B5F725A0397000AB7623 /* Assets.xcassets in Resources */,
 				6EF9B5F525A0396C00AB7623 /* Main.storyboard in Resources */,
 			);
@@ -148,6 +165,7 @@
 				6EF9B5F225A0396C00AB7623 /* ViewController.m in Sources */,
 				6EF9B5EC25A0396C00AB7623 /* AppDelegate.m in Sources */,
 				6EF9B5FD25A0397000AB7623 /* main.m in Sources */,
+				6EF9B60D25A03ABA00AB7623 /* NavigationBar.m in Sources */,
 				6EF9B5EF25A0396C00AB7623 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

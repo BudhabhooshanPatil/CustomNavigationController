@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar">
+            <connections>
+                <outlet property="backButton" destination="fRm-xy-bHh" id="bHy-Cg-8Kp"/>
+                <outlet property="backButtonLeadingConstraint" destination="7e9-Ay-qR5" id="ynG-XU-P6a"/>
+                <outlet property="containerView" destination="WKl-Fl-wBv" id="jce-ej-0fC"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yo6-I4-ysL"/>
+                <outlet property="rightBarButton" destination="7sR-Cd-bAr" id="VN9-dq-IvD"/>
+                <outlet property="titleName" destination="ktP-aX-WxD" id="7hQ-fi-ZeP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKl-Fl-wBv">
+                    <rect key="frame" x="0.0" y="0.0" width="353" height="104"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-xy-bHh">
+                            <rect key="frame" x="10" y="8" width="88" height="88"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="fRm-xy-bHh" secondAttribute="height" multiplier="1:1" id="OYm-dm-zuy"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="round_arrow_back_ios_new_black_24pt"/>
+                            <connections>
+                                <action selector="didtapBackButton:" destination="-1" eventType="touchUpInside" id="cTw-AD-s90"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-aX-WxD">
+                            <rect key="frame" x="163.5" y="8" width="26" height="88"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sR-Cd-bAr">
+                            <rect key="frame" x="249" y="8" width="88" height="88"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7sR-Cd-bAr" secondAttribute="height" multiplier="1:1" id="PTF-pt-vxT"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="round_menu_black_24pt"/>
+                            <connections>
+                                <action selector="didTapRightBarButton:" destination="-1" eventType="touchUpInside" id="KSh-MR-2gv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.5725490196078431" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fRm-xy-bHh" secondAttribute="bottom" id="22L-xA-MUA">
+                            <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                        </constraint>
+                        <constraint firstItem="ktP-aX-WxD" firstAttribute="bottom" secondItem="fRm-xy-bHh" secondAttribute="bottom" id="6P9-3J-UpD"/>
+                        <constraint firstItem="ktP-aX-WxD" firstAttribute="centerY" secondItem="fRm-xy-bHh" secondAttribute="centerY" id="6up-Wb-Cvb"/>
+                        <constraint firstItem="fRm-xy-bHh" firstAttribute="leading" secondItem="WKl-Fl-wBv" secondAttribute="leading" priority="999" constant="10" id="7e9-Ay-qR5"/>
+                        <constraint firstItem="7sR-Cd-bAr" firstAttribute="width" secondItem="7sR-Cd-bAr" secondAttribute="height" multiplier="1:1" id="86r-eG-eCR"/>
+                        <constraint firstAttribute="trailing" secondItem="7sR-Cd-bAr" secondAttribute="trailing" constant="16" id="8Nr-An-Rz1"/>
+                        <constraint firstItem="7sR-Cd-bAr" firstAttribute="bottom" secondItem="fRm-xy-bHh" secondAttribute="bottom" id="Pom-mO-las"/>
+                        <constraint firstItem="ktP-aX-WxD" firstAttribute="centerX" secondItem="WKl-Fl-wBv" secondAttribute="centerX" id="d0L-d5-hDH"/>
+                        <constraint firstItem="ktP-aX-WxD" firstAttribute="top" secondItem="fRm-xy-bHh" secondAttribute="top" id="mHI-Sn-PsM"/>
+                        <constraint firstItem="7sR-Cd-bAr" firstAttribute="top" secondItem="fRm-xy-bHh" secondAttribute="top" id="myC-A2-bKs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3VL-uk-3ap"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WKl-Fl-wBv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Zc-QG-7DH"/>
+                <constraint firstItem="fRm-xy-bHh" firstAttribute="top" secondItem="3VL-uk-3ap" secondAttribute="top" id="Qfl-Zk-gpC">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="WKl-Fl-wBv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VIA-gT-uyg"/>
+                <constraint firstItem="WKl-Fl-wBv" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="WQO-mv-3Fk"/>
+                <constraint firstItem="3VL-uk-3ap" firstAttribute="bottom" secondItem="WKl-Fl-wBv" secondAttribute="bottom" id="lRq-BK-ZjP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="120.8" y="-583.74384236453204"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="round_arrow_back_ios_new_black_24pt" width="24" height="24"/>
+        <image name="round_menu_black_24pt" width="24" height="24"/>
+    </resources>
+</document>
