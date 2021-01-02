@@ -48,23 +48,22 @@
                                               [[self.contentView leadingAnchor] constraintEqualToAnchor:self.leadingAnchor],
                                               [[self.contentView trailingAnchor] constraintEqualToAnchor:self.trailingAnchor]]];
 }
--(void)setTitlel:(NSString *)titlel{
-    [self.titleName setText:titlel];
+-(void)setTitle:(NSString *)title{
+    [self.titleName setText:title];
 }
-- (void)setBackgroundColor:(UIColor *)backgroundColor{
-    [self.containerView setBackgroundColor:backgroundColor];
+- (void)setBgColor:(UIColor *)bgColor{
+    [self.containerView setBackgroundColor:bgColor];
 }
--(void)setHideButton:(BOOL)hideButton{
-    [self.backButton setHidden:hideButton];
-    [self changePriorities:hideButton];
+-(void)setHideBackBtn:(BOOL)hideBackBtn{
+    [self.backButton setHidden:hideBackBtn];
+    [self changePriorities:hideBackBtn];
 }
 -(void)changePriorities:(BOOL)isHide {
     self.titleLeadingConstraint.priority = isHide ? 999 : 251;
     self.backButtonLeadingConstraint.priority =  isHide ? 251 : 999;
 }
--(void)setHideRightBarButton:(BOOL)hideRightBarButton{
-    
-    [self.rightBarButton setHidden:hideRightBarButton];
+-(void)setHideRightBtn:(BOOL)hideRightBtn{
+    [self.rightBarButton setHidden:hideRightBtn];
 }
 - (IBAction)didtapBackButton:(UIButton *)sender {
     

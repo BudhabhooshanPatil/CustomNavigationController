@@ -18,11 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 
 @interface NavigationBar : UIView
-@property (nonatomic ,assign ) IBInspectable NSString *titlel;
-@property (nonatomic ,assign ) IBInspectable UIColor *backgroundColor;
-@property (nonatomic) IBInspectable BOOL hideBackButton;
+@property (nonatomic ,assign ) IBInspectable NSString *title;
+@property (nonatomic ,assign ) IBInspectable UIColor *bgColor;
+@property (nonatomic) IBInspectable BOOL hideBackBtn;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
-@property (nonatomic ,assign) IBInspectable BOOL hideRightBarButton;
+@property (nonatomic ,assign) IBInspectable BOOL hideRightBtn;
 @property (nonatomic, weak) id<NavigationBarDelegate> delegate;
 
 @end

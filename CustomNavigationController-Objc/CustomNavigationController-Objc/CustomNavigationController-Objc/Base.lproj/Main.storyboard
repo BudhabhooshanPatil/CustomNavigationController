@@ -51,6 +51,9 @@
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="65" translatesAutoresizingMaskIntoConstraints="NO" id="nVG-Hr-2W0" customClass="NavigationBar">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="login"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Va5-rT-84o"/>
