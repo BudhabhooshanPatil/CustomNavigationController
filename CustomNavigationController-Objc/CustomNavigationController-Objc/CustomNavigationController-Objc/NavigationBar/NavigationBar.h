@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol NavigationBarDelegate <NSObject>
--(void)didtapBackButton;
+-(void)didtapBackBarButton;
 @optional
 -(void)didtapRightBarButton;
 @end

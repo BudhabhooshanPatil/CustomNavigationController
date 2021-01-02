@@ -16,6 +16,8 @@
 		6EF9B5FD25A0397000AB7623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B5FC25A0397000AB7623 /* main.m */; };
 		6EF9B60D25A03ABA00AB7623 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B60B25A03ABA00AB7623 /* NavigationBar.m */; };
 		6EF9B60E25A03ABA00AB7623 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */; };
+		6EF9B61525A03EA900AB7623 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B61425A03EA900AB7623 /* ParentViewController.m */; };
+		6EF9B61B25A0436F00AB7623 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9B61A25A0436F00AB7623 /* AViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		6EF9B60A25A03AB900AB7623 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		6EF9B60B25A03ABA00AB7623 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 		6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		6EF9B61325A03EA900AB7623 /* ParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		6EF9B61425A03EA900AB7623 /* ParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		6EF9B61925A0436F00AB7623 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		6EF9B61A25A0436F00AB7623 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		6EF9B5E925A0396C00AB7623 /* CustomNavigationController-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				6EF9B61825A0434E00AB7623 /* A-ViewController */,
+				6EF9B61225A03E8300AB7623 /* Parent-ViewController */,
 				6EF9B60525A03A6F00AB7623 /* NavigationBar */,
 				6EF9B5EA25A0396C00AB7623 /* AppDelegate.h */,
 				6EF9B5EB25A0396C00AB7623 /* AppDelegate.m */,
@@ -90,6 +98,24 @@
 				6EF9B60C25A03ABA00AB7623 /* NavigationBar.xib */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		6EF9B61225A03E8300AB7623 /* Parent-ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EF9B61325A03EA900AB7623 /* ParentViewController.h */,
+				6EF9B61425A03EA900AB7623 /* ParentViewController.m */,
+			);
+			path = "Parent-ViewController";
+			sourceTree = "<group>";
+		};
+		6EF9B61825A0434E00AB7623 /* A-ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EF9B61925A0436F00AB7623 /* AViewController.h */,
+				6EF9B61A25A0436F00AB7623 /* AViewController.m */,
+			);
+			path = "A-ViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EF9B5F225A0396C00AB7623 /* ViewController.m in Sources */,
+				6EF9B61B25A0436F00AB7623 /* AViewController.m in Sources */,
 				6EF9B5EC25A0396C00AB7623 /* AppDelegate.m in Sources */,
+				6EF9B61525A03EA900AB7623 /* ParentViewController.m in Sources */,
 				6EF9B5FD25A0397000AB7623 /* main.m in Sources */,
 				6EF9B60D25A03ABA00AB7623 /* NavigationBar.m in Sources */,
 				6EF9B5EF25A0396C00AB7623 /* SceneDelegate.m in Sources */,

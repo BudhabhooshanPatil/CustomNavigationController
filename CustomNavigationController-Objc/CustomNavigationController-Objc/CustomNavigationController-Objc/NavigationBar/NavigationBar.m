@@ -68,8 +68,8 @@
 }
 - (IBAction)didtapBackButton:(UIButton *)sender {
     
-    if ([self.delegate respondsToSelector:@selector(didtapBackButton)]) {
-        [self.delegate didtapBackButton];
+    if ([self.delegate respondsToSelector:@selector(didtapBackBarButton)]) {
+        [self.delegate didtapBackBarButton];
     }
 }
 - (IBAction)didTapRightBarButton:(id)sender {

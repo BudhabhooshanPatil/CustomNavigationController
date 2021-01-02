@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "A-ViewController/AViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-
+- (IBAction)onPushBtnAction:(UIButton *)sender {
+    
+    AViewController *contr = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"aViewController"];
+    [self.navigationController pushViewController:contr animated:YES];
+    
+}
 @end
