@@ -16,8 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="6L0-g6-V0z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nK-q2-N7h">
-                                <rect key="frame" x="164.5" y="433" width="85" height="30"/>
+                                <rect key="frame" x="164.5" y="343.5" width="85" height="30"/>
                                 <state key="normal" title="push to next"/>
                                 <connections>
                                     <action selector="onPushBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7F-sf-heG"/>
@@ -27,8 +30,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8nK-q2-N7h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2R3-gB-vwI"/>
+                            <constraint firstItem="8nK-q2-N7h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="2R3-gB-vwI"/>
+                            <constraint firstItem="6L0-g6-V0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L3e-Nj-b4G"/>
+                            <constraint firstItem="6L0-g6-V0z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UbX-F0-gjV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6L0-g6-V0z" secondAttribute="trailing" id="Ufj-HS-CA2"/>
                             <constraint firstItem="8nK-q2-N7h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLL-ii-vf1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6L0-g6-V0z" secondAttribute="bottom" id="wFF-ZL-els"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Vk-8Q-WOq"/>
@@ -52,16 +59,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="login"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Your Title"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideBackBtn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightBtn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="xYh-UX-Yoj">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Va5-rT-84o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Va5-rT-84o" firstAttribute="bottom" secondItem="xYh-UX-Yoj" secondAttribute="bottom" id="4Wa-XV-2hV"/>
                             <constraint firstItem="nVG-Hr-2W0" firstAttribute="leading" secondItem="Va5-rT-84o" secondAttribute="leading" id="6Mh-8L-hVc"/>
                             <constraint firstItem="nVG-Hr-2W0" firstAttribute="top" secondItem="Q6X-pv-IoY" secondAttribute="top" id="HMZ-wM-qaB"/>
+                            <constraint firstItem="xYh-UX-Yoj" firstAttribute="leading" secondItem="Va5-rT-84o" secondAttribute="leading" id="O6q-Tu-cDD"/>
+                            <constraint firstItem="xYh-UX-Yoj" firstAttribute="top" secondItem="nVG-Hr-2W0" secondAttribute="bottom" id="iMf-Oy-Tba"/>
                             <constraint firstItem="nVG-Hr-2W0" firstAttribute="trailing" secondItem="Va5-rT-84o" secondAttribute="trailing" id="u9c-2M-260"/>
+                            <constraint firstItem="Va5-rT-84o" firstAttribute="trailing" secondItem="xYh-UX-Yoj" secondAttribute="trailing" id="uVg-m5-6e0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hQw-MP-m31"/>
@@ -101,11 +120,16 @@
         </designable>
     </designables>
     <resources>
+        <image name="login" width="1080" height="1920"/>
+        <image name="register" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
