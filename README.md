@@ -7,9 +7,9 @@ A navigation controller object manages its child view controllers using an order
 ## App preview
 <p>
   <h2>set-up</h2>
-<img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/customize.gif">
+  <img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/set_class.gif">
   <h2>customize</h2>
-<img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/set_class.gif">
+  <img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/customize.gif">
 </p>
 
 
