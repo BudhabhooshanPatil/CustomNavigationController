@@ -6,8 +6,10 @@ A navigation controller object manages its child view controllers using an order
 
 ## App preview
 <p>
-<img src="https://raw.githubusercontent.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%20SE%20(2nd%20generation)%20-%202021-01-02%20at%2012.02.35.png" width="200">
-<img src="https://raw.githubusercontent.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%20SE%20(2nd%20generation)%20-%202021-01-02%20at%2012.02.38.png" width="200">
+  <h2>set-up</h2>
+<img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/customize.gif">
+  <h2>customize</h2>
+<img src="https://github.com/BudhabhooshanPatil/custom_navigation_bar_using_xib/blob/main/ScreenShots/set_class.gif">
 </p>
 
 
